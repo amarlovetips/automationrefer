@@ -1,0 +1,28 @@
+{
+  "rewrites": [
+    {
+      "source": "/proxy-rrf-api/:path*",
+      "destination": "https://api.rrfvillage.xyz/:path*"
+    },
+    {
+      "source": "/proxy-ronin-explorer/:path*",
+      "destination": "https://explorer.roninchain.com/:path*"
+    },
+    {
+      "source": "/proxy-saigon-explorer/:path*",
+      "destination": "https://saigon-explorer.roninchain.com/:path*"
+    },
+    {
+      "source": "/proxy-ronin-rpc",
+      "destination": "https://api.roninchain.com/rpc"
+    },
+    {
+      "source": "/proxy-saigon-rpc",
+      "destination": "https://saigon-testnet.roninchain.com/rpc"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
